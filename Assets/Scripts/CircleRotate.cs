@@ -9,7 +9,8 @@ public class CircleRotate : MonoBehaviour
     private float _angle;
     void Awake()
     {
-       _canRotate = true; 
+       _canRotate = true;
+       StartCoroutine(ChangeRotation()) ;
     }
 
     // Update is called once per frame
@@ -18,6 +19,12 @@ public class CircleRotate : MonoBehaviour
        if(_canRotate) {
 RotateCircle();
        }
+    }
+    IEnumerator ChangeRotation(){
+        yield return new WaitForSeconds(1f);
+        _rotationSpeed = Random.Range(30,200);
+        _rotationSpeed *= -1;
+        StartCoroutine(ChangeRotation());
     }
     void RotateCircle(){
         _angle = transform.rotation.eulerAngles.z;

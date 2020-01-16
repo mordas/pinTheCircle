@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 5109798055106492208}
   m_Layer: 0
   m_Name: needle_head
-  m_TagString: Untagged
+  m_TagString: needleHead
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -193,6 +193,7 @@ GameObject:
   - component: {fileID: 2651735104026423057}
   - component: {fileID: 1561805603676260052}
   - component: {fileID: 467670686}
+  - component: {fileID: -1690964710538052625}
   m_Layer: 0
   m_Name: Needle
   m_TagString: Untagged
@@ -276,3 +277,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _needleBody: {fileID: 177866489974649934}
+--- !u!114 &-1690964710538052625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4233230065789883458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb104263d98f9fceba7bce83d0eda82f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
