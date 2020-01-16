@@ -44,7 +44,10 @@ public class NeedleMovement : MonoBehaviour
             return;
         }
         if (other.tag == "Circle")
-        {
+        { 
+            if(ScoreManager.instance != null) {
+            ScoreManager.instance.SetScore();
+            }
             _canFireNeedle = false;
             _touchedTheCircle = true;
             _myBody.isKinematic = true;
