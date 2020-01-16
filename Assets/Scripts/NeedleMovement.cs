@@ -15,7 +15,6 @@ public class NeedleMovement : MonoBehaviour
     void Awake()
     {
         Initialize();
-        FireTheNeedle();
     }
     void Update()
     {
@@ -52,6 +51,10 @@ public class NeedleMovement : MonoBehaviour
             _myBody.velocity = new Vector2(0,0);
 
             gameObject.transform.parent = other.transform;
+
+            // if(GameManager.instance != null){
+            //     GameManager.instance.InstatnitateNeedle();
+            // }
         }
     }
 }
